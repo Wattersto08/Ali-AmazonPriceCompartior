@@ -3,8 +3,6 @@ import numpy as np
 
 DEBUG = True
 
-
-
 def ALI_Convertcost(_input):
     _input = _input.replace('US $', '')
     z = _input.split(' - ')
@@ -17,14 +15,11 @@ def ALI_Convertcost(_input):
         except:
             print('failed to convert')
 
-
-
 def Output_CSV(name, price, search):
 
     LP = []
     HP = []
     srch = []
-
     
     # Convert price string to floats
     for i in price:
