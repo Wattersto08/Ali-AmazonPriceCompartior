@@ -5,13 +5,8 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 import os        
 
-
-
 URL = 'https://www.aliexpress.com/'
 SCROLL_PAUSE_TIME = 0.5
-
-
-
 
 def Scrape_Ali(product, pages):
 
@@ -52,10 +47,6 @@ def Scrape_Ali(product, pages):
             print(k.text)
             prodprice.append(k.text)
 
-        # PROTO LINK RETURN 
-        #for y in browser.find_elements_by_xpath('//*[@id="root"]/div/div/div[2]/div[2]/div/div[2]/ul/li[1]/div/div[2]/div[1]/div[1]/a'):
-        #    prodlink.append(y.get_attribute("href"))
-        
         # Tick Page countdown
         pages = pages - 1
 
@@ -66,13 +57,4 @@ def Scrape_Ali(product, pages):
             break
         # else print the page number being searched
         print('page %d Searched!'% pages)
-
         
-        
-   
-
-
-
-
-
-#Scrape_Ali('micro SD', 5)
