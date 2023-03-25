@@ -1,5 +1,5 @@
 
-
+# import key dependencies. 
 def Imports():
     import pandas as pd
     from selenium import webdriver
